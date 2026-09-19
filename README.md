@@ -40,6 +40,20 @@ Then paste the absolute path of the clone into **Settings → Appearance → Imp
 | Rosé Pine Moon | `rose-pine-moon` | dark |
 | Rosé Pine Dawn | `rose-pine-dawn` | light |
 
+## Status tones
+
+`tone-pass` and `tone-wait` are what lich 0.53.0 reads for "passed" and "waiting
+on you". The status line sets them at 12px, where WCAG asks 4.5:1 with no
+large-text exemption, so where the palette value did not clear that against the
+card it sits on, its lightness was moved and its hue and saturation kept: the
+same move lich makes for its own two.
+
+| Variant | `tone-pass` | `tone-wait` |
+|---|---|---|
+| Rosé Pine | `#3d90b1` (pine, lightened) | `#f6c177` (gold) |
+| Rosé Pine Moon | `#439abd` (pine, lightened) | `#f6c177` (gold) |
+| Rosé Pine Dawn | `#286983` (pine) | `#9e6210` (gold, darkened) |
+
 ## Thanks to
 
 - [omartelo](https://github.com/omartelo) — port author
